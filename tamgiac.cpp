@@ -138,3 +138,36 @@ int main() {
 
     return 0;
 }
+
+/* test case: 
+Nhập toạ độ điểm A: 0 0
+Nhập toạ độ điểm B: 0 3
+Nhập toạ độ điểm C: 4 0
+- Kết quả kiểm tra tam giác: Là tam giác
+- Dạng của tam giác: Tam giác vuông
+- Toạ độ trọng tâm: (1.33333, 1)
+- Điểm có hoành độ lớn nhất: (4, 0)
+- Điểm có tung độ nhỏ nhất: (0, 0)
+- Chu vi tam giác: 12
+- Diện tích tam giác: 6
+- Nhập toạ độ điểm M: 1 1
+- Kết quả kiểm tra điểm M: Nằm trong tam giác
+Test case 2: 
+Nhập toạ độ điểm A: 1 1
+Nhập toạ độ điểm B: 2 3
+Nhập toạ độ điểm C: 4 2
+- Kết quả kiểm tra tam giác: Là tam giác
+- Dạng của tam giác: Tam giác thường
+- Toạ độ trọng tâm: (2.33333, 2)
+- Điểm có hoành độ lớn nhất: (4, 2)
+- Điểm có tung độ nhỏ nhất: (1, 1)
+- Chu vi tam giác: 8.67283
+- Diện tích tam giác: 1.5
+- Nhập toạ độ điểm M: 3 2
+- Kết quả kiểm tra điểm M: Nằm trong tam giác
+Test case 3: 
+Nhập toạ độ điểm A: 0 0
+Nhập toạ độ điểm B: 0 1
+Nhập toạ độ điểm C: 0 2
+- Kết quả kiểm tra tam giác: Không thành tam giác
+*/
