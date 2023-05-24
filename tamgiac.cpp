@@ -60,16 +60,18 @@ double khoangcachP (diem a, diem b, diem c, diem p){
 }
 
 // kiểm tra điểm nằm trong hay ngoài tam giác
-void kiemtradiem (diem a, diem b, diem c, diem m){
-    double s_abm, s_acm, s_bcm, s_abc;
-    s_abm = dientich(a, b, c);
-    s_bcm = dientich(b, c, m);
-    s_acm = dientich(a, c, m);
-    s_abc = dientich(a, b, c);
-    if (s_abc == s_abm + s_acm + s_bcm) 
-        cout << "Nằm trong tam giác";
-    else cout << "Không nằm trong tam giác";
+void kiemtradiem(diem a, diem b, diem c, diem m){
+    double s_abc = dientich(a, b, c);
+    double s_abm = dientich(a, b, m);
+    double s_acm = dientich(a, c, m);
+    double s_bcm = dientich(b, c, m);
+    
+    if (abs(s_abc - (s_abm + s_acm + s_bcm)) <= 1e-9) 
+        cout << "Điểm nằm trong tam giác";
+    else 
+        cout << "Điểm không nằm trong tam giác";
 }
+
 
 // Dạng của tam giác
 void dangtamgiac (diem a, diem b, diem c){
